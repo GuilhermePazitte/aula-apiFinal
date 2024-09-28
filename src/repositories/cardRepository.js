@@ -1,12 +1,12 @@
-const Card = require('../models/cards')
+const Conquista = require('../models/cards')
 
 class CardRepository{
     async createCard(card){
-        return await Card.create(card);
+        return await Conquista.create(card);
     }
 
     async findAll(){
-        return await Card.findAll({
+        return await Conquista.findAll({
             where: {
                 deleted: false
             }
